@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10-Pengguna berhasil memperbarui data profile dengan mengisi data yang valid</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4eb3750-60c5-4e87-9247-616069fc746e</testCaseGuid>
+</TestCaseEntity>

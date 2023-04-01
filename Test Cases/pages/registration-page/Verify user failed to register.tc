@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user failed to register</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9a34432d-80c8-4abd-8d9e-e1bd3509f08f</testCaseGuid>
+</TestCaseEntity>

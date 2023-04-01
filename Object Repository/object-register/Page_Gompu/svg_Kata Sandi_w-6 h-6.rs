@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_Kata Sandi_w-6 h-6</name>
+   <tag></tag>
+   <elementGuidId>387aa669-783e-4f2f-ab41-e3aa458a50ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Kata Sandi'])[1]/following::*[name()='svg'][1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>svg.w-6.h-6</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>d65615d5-2b10-44c7-a534-e959e4668e65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>7d506452-a875-4598-bc53-ea94876f3f84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>6ea17ba1-7a65-4579-ad51-ccb0af244adb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 24 24</value>
+      <webElementGuid>3a2ebe18-7b47-404e-9413-612d06e7b408</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke-width</name>
+      <type>Main</type>
+      <value>1.5</value>
+      <webElementGuid>9f6121fd-665f-40db-b00c-7c00962bb7f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke</name>
+      <type>Main</type>
+      <value>currentColor</value>
+      <webElementGuid>9e1c5119-4bdd-4372-9b64-c2c67cf2387f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-6 h-6</value>
+      <webElementGuid>075c8dd3-972d-41ea-98fb-7fd9b3023983</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;bg-white my-0 mx-auto&quot;]/div[@class=&quot;pt-5 pb-12 lg:flex mt-20&quot;]/div[@class=&quot;mx-10 flex md:justify-center lg:w-1/2 items-center&quot;]/div[@class=&quot;xm-auto w-full&quot;]/main[1]/form[@class=&quot;grid gap-4&quot;]/div[@class=&quot;flex border h-10 rounded-lg items-center&quot;]/button[@class=&quot;px-1.5 border h-10 rounded-lg&quot;]/svg[@class=&quot;w-6 h-6&quot;]</value>
+      <webElementGuid>c9a78f9b-7f6a-426d-9bf3-c18ca2eb45c9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kata Sandi'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>59a5a6ef-b266-4e6f-843f-7d2c92202082</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alamat Email'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>d5899b67-3c10-4087-8530-2227e3afad2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kata Sandi tidak valid!'])[1]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>4f778ee0-eb6e-4e07-afc4-e8a130b45ac6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Registrasi'])[2]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>f82e088a-2409-459b-bb24-a96197617718</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

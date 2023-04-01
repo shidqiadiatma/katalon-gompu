@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify failed update profile using empty data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>742230ac-1490-4a82-919d-3c8cf7cbb021</testCaseGuid>
+</TestCaseEntity>

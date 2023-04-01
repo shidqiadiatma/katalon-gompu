@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_jenisKelamin</name>
+   <tag></tag>
+   <elementGuidId>74922313-5775-41da-8ca2-17b8e28850d6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@name='gender']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>select[name=&quot;gender&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>70f9768c-55cb-4e1d-a725-3a9b4c5a5225</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>gender</value>
+      <webElementGuid>39cce445-719e-4ea1-9b04-7e90b0602b44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mt-3 mb-8 w-full py-3 px-2 border-2 rounded-md</value>
+      <webElementGuid>09918be3-36e0-4510-ad8a-a6aa519f29b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+        Laki-laki
+       
+        Perempuan
+      </value>
+      <webElementGuid>c14b470c-3b36-4b5e-86b7-b3c07354fcfe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;bg-white my-0 mx-auto&quot;]/div[@class=&quot;pb-7text-gray-older&quot;]/form[@class=&quot;px-5 pt-2&quot;]/select[@class=&quot;mt-3 mb-8 w-full py-3 px-2 border-2 rounded-md&quot;]</value>
+      <webElementGuid>4ac69e55-c738-48a5-ac77-b4c63a0bae2e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@name='gender']</value>
+      <webElementGuid>c2bae153-f76a-448c-9648-2fa734390ed1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__layout']/div/div/form/select</value>
+      <webElementGuid>4930e58d-25e8-41f9-a95d-7e292f4d8a12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jenis Kelamin'])[1]/following::select[1]</value>
+      <webElementGuid>8a2b2a60-f1e6-4ced-8711-c2077714093f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Phone'])[1]/following::select[1]</value>
+      <webElementGuid>204c1339-20bb-4638-a093-48d9297ebdda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tanggal Lahir'])[1]/preceding::select[1]</value>
+      <webElementGuid>0e573a66-57e3-494c-8d71-d1997bfe94e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kota'])[1]/preceding::select[1]</value>
+      <webElementGuid>6b4a20d4-0025-452d-ae97-58b11e4367e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>23018182-ed2a-4ac5-8b1f-efd83726145d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'gender' and (text() = '
+        Laki-laki
+       
+        Perempuan
+      ' or . = '
+        Laki-laki
+       
+        Perempuan
+      ')]</value>
+      <webElementGuid>66085d4d-2450-4da0-8478-acff668791d2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

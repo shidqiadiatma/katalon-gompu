@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify success update profile using fill all data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e1df361e-1949-4866-843a-8ee5c28104f3</testCaseGuid>
+</TestCaseEntity>
