@@ -22,22 +22,21 @@ Faker faker = new Faker(new Locale('in-ID'))
 
 String fullName = faker.name().fullName()
 
-String numberPhone = faker.phoneNumber().phoneNumber()
+WebUI.callTestCase(findTestCase('Test Cases/pages/general/Open browser and website'), [:], FailureHandling.STOP_ON_FAILURE)
 
-String cityOpsi = faker.options().option('Bandung', 'Bogor', 'Jember', 'Kediri', 'Lumajang', 'Malang', 'Pasuruan', 'Probolinggo', 
-    'Yogyakarta')
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Go to login page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.uploadFile(findTestObject('object-updateProfile/Page_Gompu/inputImage'), 'C:\\my-document\\automations\\katalon-file\\katalon-gompu\\testData\\fotoProfil\\kucing10.jpg')
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Go to register page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_namaLengkap'), fullName)
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Input Fullname'), [('nama_lengkap') : fullName], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_email'), 'shidqiadiatma@dispostable.com')
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Input Email'), [('email') : 'shidqiadiatma@dispostable.com'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_noHandphone'), '85454364267')
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Input Password'), [('password') : 'passwordBenar12*'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('object-updateProfile/Page_Gompu/select_jenisKelamin'), 'Perempuan', false)
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Click Registrasi button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_tanggalLahir'), '12/12/2012')
-
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_kota'), cityOpsi)
+WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Verify user failed to register'), [:], FailureHandling.STOP_ON_FAILURE)
 
