@@ -16,28 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.github.javafaker.Faker as Faker
 
-Faker faker = new Faker(new Locale('in-ID'))
+WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-String fullName = faker.name().fullName()
+WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Input Email'), [('email') : 'shidqiadiatma@dispostable.com'], FailureHandling.STOP_ON_FAILURE)
 
-String numberPhone = faker.phoneNumber().phoneNumber()
+WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Click Kirim Link button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-String cityOpsi = faker.options().option('Bandung', 'Bogor', 'Jember', 'Kediri', 'Lumajang', 'Malang', 'Pasuruan', 'Probolinggo', 
-    'Yogyakarta')
-
-WebUI.uploadFile(findTestObject('object-updateProfile/Page_Gompu/inputImage'), 'C:\\my-document\\automations\\katalon-file\\katalon-gompu\\testData\\fotoProfil\\kucing10.jpg')
-
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_namaLengkap'), fullName)
-
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_email'), 'shidqiadiatma@dispostable.com')
-
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_noHandphone'), '85454364267')
-
-WebUI.selectOptionByLabel(findTestObject('object-updateProfile/Page_Gompu/select_jenisKelamin'), 'Perempuan', false)
-
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_tanggalLahir'), '12/12/2012')
-
-WebUI.setText(findTestObject('object-updateProfile/Page_Gompu/input_kota'), cityOpsi)
-
+WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Verify success to request forgot password link'), null, FailureHandling.STOP_ON_FAILURE)

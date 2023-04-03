@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09-Pengguna gagal memperbarui profile dengan semua mengosongkan data</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>572886b1-f8a4-4ff0-8a00-fba77e2995a9</testCaseGuid>
-</TestCaseEntity>
