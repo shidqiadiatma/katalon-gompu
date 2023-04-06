@@ -17,10 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
+'Click Ok button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Input Email'), [('email') : 'shidqiadiatma@dispostable.com'], FailureHandling.STOP_ON_FAILURE)
+'Input email'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Input Email'), [('email') : 'shidqiadiatma@dispostable.com'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Click Kirim Link button'), [:], FailureHandling.STOP_ON_FAILURE)
+'Click kirim link button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Click Kirim Link button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Verify success to request forgot password link'), null, FailureHandling.STOP_ON_FAILURE)
+'Verify success to request forgot password link'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Verify success to request forgot password link'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+

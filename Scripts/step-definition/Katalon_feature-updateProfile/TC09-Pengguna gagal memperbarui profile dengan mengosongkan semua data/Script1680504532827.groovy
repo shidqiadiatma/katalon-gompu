@@ -17,18 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Click ok button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/updateProfile-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/updateProfile-page/Click Ok button'), null, FailureHandling.STOP_ON_FAILURE)
+'Go to profil page'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/updateProfile-page/Go to profile page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/updateProfile-page/Go to profile page'), null, FailureHandling.STOP_ON_FAILURE)
+'Go to update profile page'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/updateProfile-page/Go to update profile page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/updateProfile-page/Go to update profile page'), null, FailureHandling.STOP_ON_FAILURE)
+'Clear all data'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/updateProfile-page/Clear all data'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/updateProfile-page/Clear all data'), null, FailureHandling.STOP_ON_FAILURE)
+'Click save button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/updateProfile-page/Click Simpan button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/updateProfile-page/Click Simpan button'), null, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Test Cases/pages/updateProfile-page/Verify failed update profile using empty data'), null, FailureHandling.STOP_ON_FAILURE)
-
-
+'Verify failed update profil using empty data'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/updateProfile-page/Verify failed update profile using empty data'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 

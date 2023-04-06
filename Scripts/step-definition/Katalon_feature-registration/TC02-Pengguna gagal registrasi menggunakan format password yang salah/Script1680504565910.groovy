@@ -16,22 +16,31 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.github.javafaker.Faker as Faker
 
+'Import faker library'
+import com.github.javafaker.Faker as Faker
 Faker faker = new Faker(new Locale('in-ID'))
 
+'Generate random fullname'
 String fullName = faker.name().fullName()
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Click Ok button'), null, FailureHandling.STOP_ON_FAILURE)
+'Generate random  email'
+String randomEmail = faker.internet().emailAddress()
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Input Fullname'), [('nama_lengkap') : fullName], FailureHandling.STOP_ON_FAILURE)
+'Click Ok button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-randomEmail = WebUI.callTestCase(findTestCase('Test Cases/pages/general/Generate random email'), null, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Input Email'), [('email') : randomEmail], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Input Password'), [('password') : 'formatpasswordsalah'], 
+'Input fullname'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Input Fullname'), [('nama_lengkap') : fullName], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Verify alert on password field exist'), [:], FailureHandling.STOP_ON_FAILURE)
+'Input email'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Input Email'), [('email') : randomEmail], FailureHandling.STOP_ON_FAILURE)
+
+'Input password'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Input Password'), [('password') : 'passwordsalaaah'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+'Verify error alert message on password field exist'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Verify alert on password field exist'), [:], FailureHandling.STOP_ON_FAILURE)
 

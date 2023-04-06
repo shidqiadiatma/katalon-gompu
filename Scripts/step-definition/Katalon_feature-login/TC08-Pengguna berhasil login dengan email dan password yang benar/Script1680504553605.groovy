@@ -17,12 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
+'Click ok button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/login-page/Input Email'), [('email') : 'shidqiadiatma@dispostable.com'], FailureHandling.STOP_ON_FAILURE)
+'Input email'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Input Email'), [('email') : 'shidqiadiatma@dispostable.com'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/login-page/Input Password'), [('password') : 'passwordBenar12*'], FailureHandling.STOP_ON_FAILURE)
+'Input password'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Input Password'), [('password') : 'passwordBenar12*'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/login-page/Click Masuk button'), [:], FailureHandling.STOP_ON_FAILURE)
+'Click masuk button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Click Masuk button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/login-page/Verify success login user'), null, FailureHandling.STOP_ON_FAILURE)
+'Verify success login user'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Verify success login user'), [:], FailureHandling.STOP_ON_FAILURE)
+

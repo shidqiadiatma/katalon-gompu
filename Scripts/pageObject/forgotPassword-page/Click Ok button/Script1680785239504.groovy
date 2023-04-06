@@ -17,25 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Import faker library'
-import com.github.javafaker.Faker as Faker
-Faker faker = new Faker(new Locale('in-ID'))
-
-'Generate random  email'
-String randomEmail = faker.internet().emailAddress()
-
-'Click Ok button'
-WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Input email'
-WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Input Email'), [('email') : randomEmail], FailureHandling.STOP_ON_FAILURE)
-
-'Input password'
-WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Input Password'), [('password') : 'passwordBenar12*'], FailureHandling.STOP_ON_FAILURE)
-
-'Input masuk button'
-WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Click Masuk button'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Verify failed login using unregistered email'
-WebUI.callTestCase(findTestCase('Test Cases/pageObject/login-page/Verify failed login using unregistered email'), [:], FailureHandling.STOP_ON_FAILURE)
-
+WebUI.click(findTestObject('Object Repository/object-forgotPassword/Page_Gompu/button_OK'))

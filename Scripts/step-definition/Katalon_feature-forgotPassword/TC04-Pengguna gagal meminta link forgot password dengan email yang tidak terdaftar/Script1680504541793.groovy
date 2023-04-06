@@ -17,12 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/registration-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
+'Import faker library'
+import com.github.javafaker.Faker as Faker
+Faker faker = new Faker(new Locale('in-ID'))
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Go to forgot password page'), [:], FailureHandling.STOP_ON_FAILURE)
+'Generate random  email'
+String randomEmail = faker.internet().emailAddress()
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Input Email'), [('email') : 'emailtidakterdaftar@mail.com'], FailureHandling.STOP_ON_FAILURE)
+'Click Ok button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/registration-page/Click Ok button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Click Kirim Link button'), [:], FailureHandling.STOP_ON_FAILURE)
+'Go to forgot password page'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Go to forgot password page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/pages/forgotPassword-page/Verify failed to request forgot password link'), null, FailureHandling.STOP_ON_FAILURE)
+'Input email'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Input Email'), [('email') : randomEmail], 
+    FailureHandling.STOP_ON_FAILURE)
+
+'Click kirim link button'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Click Kirim Link button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+'Verify failed to request forgot password link'
+WebUI.callTestCase(findTestCase('Test Cases/pageObject/forgotPassword-page/Verify failed to request forgot password link'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
